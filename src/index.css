@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AG Grid Theme Overrides */
+.ag-theme-alpine {
+  --ag-background-color: transparent;
+  --ag-header-background-color: #f8fafc;
+  --ag-odd-row-background-color: #ffffff;
+  --ag-row-hover-color: #f3f4f6;
+  --ag-selected-row-background-color: #eef2ff;
+  --ag-font-family: inherit;
+  --ag-border-color: #e5e7eb;
+  --ag-row-border-color: #f1f5f9;
+  --ag-header-column-separator-display: none;
+  --ag-header-foreground-color: #4b5563;
+  --ag-font-size: 14px;
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.ag-theme-alpine .ag-header-cell {
+  font-weight: 600;
+}
+
+.ag-theme-alpine .ag-cell {
+  line-height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
